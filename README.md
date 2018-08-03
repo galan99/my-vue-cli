@@ -3,7 +3,7 @@
 
 # 效果图
 
-!(图片)[./gitimg/1.png]
+![图片](./gitimg/1.png)
 
 
 ## 1、启用happypack多核构建项目
