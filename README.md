@@ -9,8 +9,6 @@
 ## 技术栈
 
 vue2 + vue-router + axios + vant
-
-<br/>
 <br/>
 vant自身实现了组件按需加载，优化性能
 
