@@ -4,6 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+
+import {install} from'./components/ui.js' //封装的插件
+Vue.use(install)
+
+//https://youzan.github.io/vant/#/zh-CN/quickstart
+import { Button } from 'vant'; //有赞组件
+Vue.use(Button);
+
 Vue.config.productionTip = false
 
 /* 配置请求域名 */

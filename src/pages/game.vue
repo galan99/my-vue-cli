@@ -1,8 +1,6 @@
 <template>
   <div class="game">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-
+    <Loading :loading="loading"></Loading>
     <div class="top">
 
     </div>
@@ -15,6 +13,8 @@
         <button v-if="!startStatus" @click="start">{{buttonText}}</button>
         <button v-if="startStatus" @click="stop">结束</button>
       </div>
+      <button @click="show">显示弹窗</button>
+      <van-button type="primary">主要按钮</van-button>
     </div>
 
   </div>
@@ -31,14 +31,21 @@ export default {
       timeStr: '00.00',
       startTime:0,
       timer:null,
+      loading:false,
+      msg:'',
+      num:0,
     }
   },
   methods: {
     start() {
-      console.log('开始')
+      console.log('开始')    
       this.startStatus = true;
       this.startTime = new Date().getTime();
       this.cutDown()
+    },
+    show(){
+      this.num++
+      this.$toast('Upload Completed数字'+this.num)
     },
     cutDown(){
       let that = this;

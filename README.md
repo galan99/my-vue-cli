@@ -1,9 +1,18 @@
 # vue-cli之webpack3构建全面提速优化
 
+## [有赞ui文档](https://youzan.github.io/vant/#/zh-CN/quickstart)
 
 ## 效果图
 
 ![图片](./gitimg/1.png)
+
+## 技术栈
+
+vue2 + vue-router + axios + vant
+
+<br/>
+<br/>
+vant自身实现了组件按需加载，优化性能
 
 
 ## 1、启用happypack多核构建项目
